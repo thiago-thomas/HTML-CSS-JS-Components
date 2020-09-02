@@ -1,0 +1,137 @@
+/* || General Setup */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0; 
+    margin: 0;
+}
+
+/* || Typography */
+
+h1, h2, h3 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: white;
+}
+
+p, input, li, a {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, li, a {
+    font-size: 1.6rem;
+}
+
+/* || Header Layout */
+
+header {
+    background: blue;
+    color: white;
+}
+
+header .title {
+    font-size: 3.5rem;
+    padding: 20px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    display: block;
+    outline: none;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 2px solid white;
+}
+
+header a:visited, header a:link, header a:focus {
+    color: white;
+}
+
+/* || Main Layout */
+
+main > * {
+    background: blue;
+    padding: 30px 15px;
+    margin: 10px 0;
+}
+
+main article {
+    margin-bottom: 80px;
+}
+
+main article:last-child {
+    margin: 0;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* || Footer Layout */
+
+footer {
+    background: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* || Media Queries */
+
+@media screen and (min-width: 600px) {
+    body {
+        width: 85%;
+        max-width: 1000px;
+        margin: 5px auto;
+    }
+
+    header, header ul {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header li {
+        margin-right: 15px;
+    }
+
+    header a {
+        border: 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    header a:hover {
+        border-color: white;
+        transition: 1s ease;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        gap: 10px;
+    }
+}
