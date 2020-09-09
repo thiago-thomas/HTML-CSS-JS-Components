@@ -1,3 +1,5 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
 /* || General Setup */
 
 html {
@@ -103,9 +105,120 @@ main h2 {
 /* || Footer Layout */
 
 footer {
+    box-sizing: border-box;
     background: blue;
-    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 55px 50px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+.footer-left {
+    width: 40%
+}
+
+.footer-left h3 {
+    color: white;
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.footer-left h3 span {
+    color: aqua;
+}
+
+.footer-left p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+
+.footer-center {
+    width: 35%;
+}
+
+.footer-center i {
+    background: white;
+    color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 2.5rem;
     text-align: center;
+    line-height: 40px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center p {
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-center p a {
+    color: aqua;
+    text-decoration: none;
+}
+
+
+
+.footer-right {
+    width: 20%;
+}
+
+.footer-right p {
+    color: aqua;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+}
+
+.footer-right p span {
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    margin-top: 20px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    background: white;
+    color: blue;
+    width: 35px; 
+    height: 35px;
+    line-height: 35px;
+    border-radius: 2px;
+    font-size: 2.0rem;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 5px;
 }
 
 /* || Media Queries */
@@ -143,5 +256,26 @@ footer {
     header {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+/* || Footer Media Queries */
+
+@media screen and (max-width: 880px) {
+    footer {
+		font-family: sans-serif;
+		font-size: 1.4rem;
+		font-weight: bold;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-center i {
+        margin-left: 0;
     }
 }
