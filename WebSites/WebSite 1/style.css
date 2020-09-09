@@ -42,11 +42,7 @@ p, li, a {
 header {
     background: blue;
     color: white;
-}
-
-header .title {
-    font-size: 3.5rem;
-    padding: 20px;
+    padding: 15px 0;
 }
 
 header ul {
@@ -58,15 +54,30 @@ header ul {
 header a {
     display: block;
     outline: none;
-    padding: 15px;
+    padding: 15px 30px;
     text-decoration: none;
     text-transform: uppercase;
-    border-top: 2px solid white;
+    text-align: center;
 }
 
 header a:visited, header a:link, header a:focus {
     color: white;
 }
+
+header .logo a {
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 25px;
+}
+
+header nav a {
+    font-size: 1.8rem;
+}
+
+header nav a:hover {
+    color: aqua;
+}
+
 
 /* || Main Layout */
 
@@ -99,6 +110,8 @@ footer {
 
 /* || Media Queries */
 
+/* || General Media Queries */
+
 @media screen and (min-width: 600px) {
     body {
         width: 85%;
@@ -106,32 +119,29 @@ footer {
         margin: 5px auto;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        gap: 10px;
+    }
+}
+
+/* || Header Media Queries */
+
+@media screen and (min-width: 768px) {
     header, header ul {
         display: flex;
     }
 
     header {
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
     }
+}
 
-    header li {
-        margin-right: 15px;
-    }
-
-    header a {
-        border: 0;
-        border-bottom: 2px solid transparent;
-    }
-
-    header a:hover {
-        border-color: white;
-        transition: 1s ease;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 5fr 2fr;
-        gap: 10px;
+@media screen and (min-width: 1025px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
