@@ -1,0 +1,275 @@
+/* General Settings */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Typography */ 
+
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p, li, a, input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p, li, a {
+    font-size: 1.6rem;
+}
+
+/* Header */
+
+header {
+    background: blue;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    display: block;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-top: 1px solid black;
+}
+
+header a:link, header a:visited, header a:focus {
+    color: black;
+}
+
+header a:hover {
+    color: white;
+}
+
+header nav a::before, header nav a::after {
+    background: white;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    transition: .4s ease-in-out; 
+}
+
+header nav a::before {
+    left: 50%;
+}
+
+header nav a::after {
+    right: 50%;
+}
+
+header nav a:hover::before, header nav a:hover::after {
+    width: 47%;
+}
+
+header .logo a {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px
+}
+
+/* Sections */
+
+section {
+    padding: 140px 0;
+}
+
+section:nth-child(even) {
+    background: rgb(53, 118, 238);
+}
+
+section:nth-child(odd) {
+    background: white;;
+}
+
+
+/* Footer */
+
+footer {
+    background: blue;
+    width: 100%;
+    padding: 70px 0;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+.footer-left, .footer-center, .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+.footer-left {
+    width: 30%;
+}
+
+.footer-left h3 {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.footer-left span {
+    color: white;
+}
+
+.footer-left p {
+    font-size: 1.5rem;
+}
+
+
+
+.footer-center {
+    width: 40%;
+}
+
+.footer-center i {
+    background: white;
+    color: black;
+    margin: 10px 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.footer-center p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-center a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.footer-right {
+    width: 20%;
+}
+
+.footer-right p {
+    font-size: 1.6rem;
+}
+
+.footer-right span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-icons {
+    margin-top: 55px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    background: white;
+    color: black;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* Media Queries */
+
+/* Header Media Queries */
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header li {
+    margin: 0;
+  }
+  
+  header a {
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    header nav a:hover::before, header nav a:hover::after  {
+        width: 0;
+    }
+}
+
+
+/* Footer Media Queries */
+
+@media screen and (max-width: 880px) {
+    footer {
+        font-size: 1.4rem;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-center i {
+        margin-left: 0;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+    }
+}
+
+
+
