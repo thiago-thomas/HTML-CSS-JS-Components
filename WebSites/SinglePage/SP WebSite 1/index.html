@@ -10,30 +10,34 @@
 
 <body>
     <header>
-        <div class="logo"><a href="">Logo</a></div>
+        <div class="logo">Logo</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About the Site</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home">
-        <h2>Home Title</h2>
-    </section>
-    <section>
-        <h2>About Title</h2>
-    </section>
-    <section>
-        <h2>Contact Title</h2>
-    </section>
-    <section>
-        <h2>About the Site Title</h2>
-    </section>
-
+    <main>
+        <section id="home">
+            <h2>Home Title</h2>
+            <p>Home Paragraph</p>
+        </section>
+        <section id="about">
+            <h2>About Title</h2>
+            <p>About Paragraph</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form>
+                <input type="text" name="name" class="form-input" placeholder="Name">
+                <input type="email" name="email" class="form-input" placeholder="Email">
+                <textarea name="comments" class="form-input" placeholder="Leave a Message..."></textarea>
+                <input type="submit" class="form-submit" value="SUBMIT">
+            </form>
+        </section>
+    </main>
     <footer>
         <div class="footer-left">
             <h3>Company<span>comp</span></h3>
@@ -46,7 +50,7 @@
             </div>
             <div>
                 <i class="fa fa-phone"></i>
-                <p>+1 11 111-222-333</p>
+                <p>+1 1 111-222-333</p>
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
@@ -56,12 +60,12 @@
         <div class="footer-right">
             <p>
                 <span>About the Company</span>
-                This Conpany is Awesome
+                Best Company Ever
             </p>
             <div class="footer-icons">
                 <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-instagram"></i></a>
                 <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
                 <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
         </div>

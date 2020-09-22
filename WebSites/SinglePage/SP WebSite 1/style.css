@@ -1,7 +1,8 @@
-/* General Settings */
-
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Kumbh+Sans&display=swap');
 
+
+/* General Setup */
 html {
     font-size: 10px;
 }
@@ -11,15 +12,13 @@ body {
     padding: 0;
 }
 
-
-/* Typography */ 
-
+/* Typography */
 h1, h2, h3 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-p, li, a, input {
-    font-family: 'Courier New', Courier, monospace;
+p, li, input, a {
+    font-family: 'Dosis', sans-serif;
 }
 
 h1 {
@@ -30,18 +29,20 @@ h2 {
     font-size: 3.5rem;
 }
 
+
 h3 {
     font-size: 2.8rem;
 }
 
-p, li, a {
-    font-size: 1.6rem;
+p, li, input, a {
+    font-size: 2rem;
 }
 
-/* Header */
 
+/* Header Layout */
 header {
-    background: blue;
+    background: green;
+    color: black;
 }
 
 header ul {
@@ -50,92 +51,137 @@ header ul {
     padding: 0;
 }
 
-header a {
-    display: block;
-    position: relative;
-    outline: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 15px 20px;
-    border-top: 1px solid black;
+header .logo {
+    font-size: 3.5rem;
+    padding: 30px;
 }
 
-header a:link, header a:visited, header a:focus {
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    position: relative;
+    display: block;
+    outline: none;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 2px solid black;
+}
+
+header a:visited, header a:link, header a:focus {
     color: black;
 }
 
-header a:hover {
-    color: white;
-}
-
-header nav a::before, header nav a::after {
-    background: white;
+header a::before, header a::after {
+    background: black;
     content: "";
     position: absolute;
     bottom: 0;
-    width: 0;
     height: 3px;
-    transition: .4s ease-in-out; 
+    width: 0;
 }
 
-header nav a::before {
+header a::before {
     left: 50%;
 }
 
-header nav a::after {
+header a::after {
     right: 50%;
 }
 
-header nav a:hover::before, header nav a:hover::after {
-    width: 47%;
+/* Main Layout */
+
+main {
+    margin: 10px 0;
 }
 
-header .logo a {
-    font-size: 40px;
-    font-style: italic;
-    font-weight: bold;
-    padding: 20px
+main section {
+    padding: 140px 15px;
 }
 
-/* Sections */
-
-section {
-    padding: 140px 0;
+main section:nth-child(even) {
+    background: rgb(0, 190, 0);
 }
 
-section:nth-child(even) {
-    background: rgb(53, 118, 238);
+main section:nth-child(odd) {
+    background: white;
 }
 
-section:nth-child(odd) {
-    background: white;;
+main section h2 {
+    margin: 0;
+    padding: 0;
 }
 
+/* Contact Section */
+#contact h2 {
+    text-align: center;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#contact .form-input, #contact .form-submit {
+    background: transparent;
+    color: green;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: 2px solid green;
+}
+
+#contact .form-input {
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+#contact textarea {
+    resize: none;
+    height: 150px;
+    line-height: 150%;
+}
+
+#contact .form-submit {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#contact .form-submit:hover {
+    background: green;
+    color: white;
+    border-color: white;
+}
 
 /* Footer */
 
 footer {
-    background: blue;
+    box-sizing: border-box;
+    background: green;
     width: 100%;
-    padding: 70px 0;
-    padding-left: 20px;
+    padding: 55px 50px;
     font-weight: bold;
-    margin-top: 10px;
 }
-
-
-
 
 .footer-left, .footer-center, .footer-right {
     display: inline-block;
     vertical-align: top;
 }
 
-
-
-
 .footer-left {
-    width: 30%;
+    width: 40%;
 }
 
 .footer-left h3 {
@@ -148,13 +194,11 @@ footer {
 }
 
 .footer-left p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-
-
 .footer-center {
-    width: 40%;
+    width: 35%;
 }
 
 .footer-center i {
@@ -180,19 +224,16 @@ footer {
     color: white;
 }
 
-
-
-
 .footer-right {
     width: 20%;
 }
 
 .footer-right p {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .footer-right span {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     display: block;
     margin-bottom: 10px;
 }
@@ -216,40 +257,37 @@ footer {
     margin-bottom: 5px;
 }
 
-
 /* Media Queries */
 
-/* Header Media Queries */
-
-@media screen and (min-width: 768px) {
-  header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  header ul {
-    display: flex;
-  }
-  
-  header li {
-    margin: 0;
-  }
-  
-  header a {
-    border: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-    header nav a:hover::before, header nav a:hover::after  {
-        width: 0;
+/* Header Queries */
+@media screen and (min-width: 600px) {
+    header, header ul {
+        display: flex;
     }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header li {
+        margin-right: 15px;
+    }
+
+    header nav a {
+        border: 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    header a:hover:before, header a:hover::after {
+        width: 47%;
+        transition: .5s ease;
+    }
+    
 }
 
 
 /* Footer Media Queries */
-
 @media screen and (max-width: 880px) {
     footer {
         font-size: 1.4rem;
@@ -270,6 +308,4 @@ footer {
         margin-top: 10px;
     }
 }
-
-
 
