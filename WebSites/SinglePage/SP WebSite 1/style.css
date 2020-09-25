@@ -100,7 +100,8 @@ main {
 }
 
 main section {
-    padding: 140px 15px;
+    min-height: 85vh;
+    padding: 50px 15px;
 }
 
 main section:nth-child(even) {
@@ -112,19 +113,46 @@ main section:nth-child(odd) {
 }
 
 main section h2 {
+    font-size: 7rem;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* Home Section */
+
+#home {
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+
+
+#home h2 {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 100px;;
+}
+
+#home p {
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;;
+}
+
+
+/* About Section */
+
+
 /* Contact Section */
 #contact h2 {
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 #contact form {
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 20px;
 }
 
 #contact .form-input, #contact .form-submit {
