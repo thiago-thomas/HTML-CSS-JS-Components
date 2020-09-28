@@ -1,10 +1,13 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 
 /* General Setup */
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -125,13 +128,15 @@ main section h2 {
     background-image: url("images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin-top: -10px;
 }
 
 
 #home h2 {
-    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
+    color: green;
     margin-bottom: 100px;;
 }
 
@@ -143,6 +148,67 @@ main section h2 {
 
 
 /* About Section */
+.about-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+.about-left {
+    width: 400px;
+    height: 250px;
+    background-image: url("./images/about-img.jpg");
+	background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+
+.about-right {
+    flex-basis: 60%;
+}
+
+.about-right h3, .about-right p {
+    margin: 0;
+    padding: 0;
+}
+
+.about-right h3 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 3.5rem;
+}
+
+.about-right p {
+    font-size: 2rem;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.about-right a {
+    display: inline-block;
+    outline: none;
+    font-weight: 900;
+    padding: 20px;
+    background: green;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.about-right a:link, .about-right a:visited, .about-right a:focus {
+    color: white;
+}
+
+.about-right a:hover {
+    background: white;
+    color: green;
+}
+
+
 
 
 /* Contact Section */
@@ -312,6 +378,18 @@ footer {
         transition: .5s ease;
     }
     
+}
+
+/* About Media Queries */
+@media screen and (max-width: 1150px) {
+    .about-left {
+        margin: 0;
+        margin-bottom: 70px;
+    }
+
+    .about-right h3 {
+        text-align: center;
+    }
 }
 
 
