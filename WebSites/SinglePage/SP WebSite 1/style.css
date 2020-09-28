@@ -44,7 +44,7 @@ p, li, input, a {
 
 /* Header Layout */
 header {
-    background: green;
+    background: rgb(0, 190, 0);
     color: black;
 }
 
@@ -263,7 +263,7 @@ main section h2 {
 
 footer {
     box-sizing: border-box;
-    background: green;
+    background: rgb(0, 190, 0);
     width: 100%;
     padding: 55px 50px;
     font-weight: bold;
