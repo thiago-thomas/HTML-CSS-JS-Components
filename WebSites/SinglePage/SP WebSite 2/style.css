@@ -1,5 +1,7 @@
 /* General Setup */
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 
 html {
     font-size: 10px;
@@ -152,7 +154,79 @@ footer {
     background: black;
     color: white;
     padding: 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer .col {
+    flex: 2;
+    margin: 0 30px;
+}
+
+footer .col.social {
+    flex: 1;
+}
+
+footer .col h3 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+footer .col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .col li {
+    color: gray;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+footer .col li:hover {
+    color: white;
+}
+
+footer .col.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .col.social li {
+    display: inline-block;
+}
+
+footer .col.social a {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: none;
     text-align: center;
+    color: gray;
+}
+
+footer .col.social a.fa-facebook:hover {
+    color: rgb(70, 70, 223);
+}
+
+footer .col.social a.fa-instagram:hover {
+    color: rgb(255, 0, 157);
+}
+
+footer .col.social a.fa-twitter:hover {
+    color: rgb(0, 225, 255);
+}
+
+footer .col.social a.fa-linkedin:hover {
+    color: rgb(70, 70, 223);
 }
 
 /* Media Queries */
