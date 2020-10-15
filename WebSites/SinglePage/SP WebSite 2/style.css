@@ -1,5 +1,6 @@
 /* General Setup */
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
@@ -167,7 +168,9 @@ footer .col {
 }
 
 footer .col h3 {
-    font-size: 4rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
     margin: 0;
     margin-bottom: 10px;
 }
