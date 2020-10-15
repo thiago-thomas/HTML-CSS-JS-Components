@@ -6,6 +6,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -97,7 +98,7 @@ main {
 }
 
 main section {
-    padding: 140px 15px;
+    padding: 70px 15px;
 }
 
 main section:nth-child(even) {
@@ -115,10 +116,18 @@ main h2 {
 
 
 /* Contact Layout*/
+#contact h2, #contact p {
+    text-align: center;
+}
+
+#contact p {
+    color: gray;
+}
 
 #contact form {
     max-width: 500px;
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .form-input, .form-submit {
