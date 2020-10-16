@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 html {
     font-size: 10px;
@@ -110,17 +110,45 @@ main section:nth-child(odd) {
 }
 
 main h2 {
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
-
-/* Contact Layout*/
-#contact h2, #contact p {
-    text-align: center;
+/* Our Team Layout */
+#team {
+    background: black;
+    color: white;
+    padding: 70px 20px;
 }
 
+.team-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team-member {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.team-member h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.team-member img {
+    background: grey;
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+
+/* Contact Layout*/
 #contact p {
+    text-align: center;
     color: gray;
 }
 
@@ -282,3 +310,10 @@ footer .col.social a.fa-linkedin:hover {
 
 }
 
+/* Our Team Queries */
+
+@media screen and (max-width: 719px) {
+    .team-container {
+        text-align: center;
+    }
+}
