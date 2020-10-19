@@ -92,7 +92,6 @@ header a:hover {
 
 
 /* Main Layout */
-
 main {
     margin: 10px 0;
 }
@@ -102,7 +101,8 @@ main section {
 }
 
 main section:nth-child(even) {
-    background: rgb(0, 190, 0);
+    background: black;
+    color: white;
 }
 
 main section:nth-child(odd) {
@@ -115,10 +115,46 @@ main h2 {
     padding: 0;
 }
 
+/* About Layout */
+#about {
+    padding: 70px 20px;
+}
+
+#about h3, #about p, #about a {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#about h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#about p {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+#about a {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+#about a:hover {
+    background: white;
+    color: black;
+    transition: .5s all;
+}
+
 /* Our Team Layout */
 #team {
-    background: black;
-    color: white;
     padding: 70px 20px;
 }
 
