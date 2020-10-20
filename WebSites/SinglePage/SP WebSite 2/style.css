@@ -1,8 +1,9 @@
 /* General Setup */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 html {
     font-size: 10px;
@@ -112,6 +113,54 @@ main h2 {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+/* Home Layout*/
+
+main section.home {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -90px;;
+    margin-top: -10px;
+}
+
+.home-col-text {
+    margin-top: 10px;
+    padding: 0 20px;
+    padding-left: 550px;
+    text-align: right;
+}
+
+.home-col-text > * {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.home h3 {
+    font-family: 'Hind', sans-serif;
+    font-size: 10rem;    
+}
+
+.home p {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+.home a {
+    display: inline-block;
+    font-size: 4rem;
+    border: 1px solid;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.home a:hover {
+    background: black;
+    color: white;
+    transition: .5s all;
 }
 
 /* About Layout */
@@ -332,6 +381,52 @@ footer .col.social a.fa-linkedin:hover {
 }
 
 /* Media Queries */
+
+/* Home Queries */
+
+@media screen and (max-width: 1221px) {
+    main section.home {
+        background-position: center;
+    }
+    
+    .home h3 {
+        font-size: 5rem;
+    }
+    
+    .home p {
+        font-size: 2.5rem;
+    }
+    
+    .home a {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 795px) {
+    main section.home {
+        background-position: left;
+        height: 400px;
+    }
+    
+    .home-col-text {
+        padding: 30px;
+        padding-left: 350px;
+    }
+    
+    .home h3, .home p, .home a {
+        font-size: 2rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 539px) {
+    .home-col-text {
+        display: none;
+    }
+}
+
 
 /* Header Queries */
 @media screen and (min-width: 795px) {
