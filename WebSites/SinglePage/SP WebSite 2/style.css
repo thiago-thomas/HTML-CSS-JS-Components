@@ -178,12 +178,14 @@ main section.home {
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #about p {
     font-size: 2.5rem;
-    margin-top: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-top: 50px;
 }
 
 #about a {
