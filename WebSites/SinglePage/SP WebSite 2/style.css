@@ -158,6 +158,11 @@ main h2 {
     padding: 70px 100px;
 }
 
+#services h2 + p {
+    text-align: center;
+    color: gray;
+}
+
 .services-container {
     display: flex;
     flex-flow: row wrap;
