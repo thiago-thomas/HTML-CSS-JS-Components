@@ -1,0 +1,132 @@
+/* General Setup */
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p, li, input, a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p, li, input, a {
+    font-size: 2rem;
+}
+
+
+/* Header Layout */
+header {
+    background: green;
+    color: black;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    font-size: 3.5rem;
+    padding: 30px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    display: block;
+    outline: none;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 2px solid black;
+}
+
+header a:visited, header a:link, header a:focus {
+    color: black;
+}
+
+/* Main Layout */
+
+main {
+    margin: 10px 0;
+}
+
+main section {
+    padding: 140px 15px;
+}
+
+main section:nth-child(even) {
+    background: rgb(0, 190, 0);
+}
+
+main section:nth-child(odd) {
+    background: white;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background: green;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Header Queries */
+@media screen and (min-width: 600px) {
+    header, header ul {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header li {
+        margin-right: 15px;
+    }
+
+    header nav a {
+        border: 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    header nav a:hover {
+        border-color: black;
+        transition: 1s ease;
+    }
+    
+}
+
