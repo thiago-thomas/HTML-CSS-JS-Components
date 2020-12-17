@@ -1,3 +1,6 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 /* General Setup */
 html {
     font-size: 10px;
@@ -10,11 +13,11 @@ body {
 
 /* Typography */
 h1, h2, h3 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p, li, input, a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nunito', monospace;
 }
 
 h1 {
@@ -37,38 +40,35 @@ p, li, input, a {
 
 /* Header Layout */
 header {
-    background: green;
+    background: #676167;
     color: black;
+    padding: 15px;
 }
 
 header ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-header .logo {
-    font-size: 3.5rem;
-    padding: 30px;
-}
-
-header ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    margin-right: 100px;
 }
 
 header a {
+    font-size: 1.4rem;
+    font-weight: 600;
     display: block;
     outline: none;
-    padding: 15px;
+    padding: 7px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-top: 2px solid black;
 }
 
 header a:visited, header a:link, header a:focus {
-    color: black;
+    color: #a5b5b7;
+}
+
+header a:hover {
+    color: white;
 }
 
 /* Main Layout */
@@ -120,13 +120,6 @@ footer {
 
     header nav a {
         border: 0;
-        border-bottom: 2px solid transparent;
     }
-
-    header nav a:hover {
-        border-color: black;
-        transition: 1s ease;
-    }
-    
 }
 
