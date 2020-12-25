@@ -1,5 +1,6 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /* General Setup */
 html {
@@ -13,7 +14,7 @@ body {
 
 /* Typography */
 h1, h2, h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 p, li, input, a {
@@ -74,24 +75,61 @@ header a:hover {
 /* Main Layout */
 
 main {
-    margin: 10px 0;
+    margin: 0;
 }
 
 main section {
-    padding: 140px 15px;
+    padding: 180px 15px;
 }
 
 main section:nth-child(even) {
-    background: rgb(0, 190, 0);
+    background: white;
 }
 
 main section:nth-child(odd) {
-    background: white;
+    background: #676167;
 }
 
 main h2 {
     margin: 0;
     padding: 0;
+}
+
+/* Home Section */
+#home {
+    padding-top: 80px;
+}
+
+#home .home-div {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    text-align: center;
+}
+
+#home .home-div *{
+    margin: 50px 0;
+    color: white;
+}
+
+#home .home-div h2 {
+    font-size: 8rem;
+}
+
+#home .home-div p {
+    font-size: 1.9rem;
+}
+
+#home .home-div a {
+    outline: none;
+    background: red;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#home .home-div a:hover {
+    background-color: rgb(247, 17, 17)
 }
 
 /* Footer */
