@@ -80,14 +80,42 @@ main {
 
 main section {
     padding: 180px 15px;
+    padding-top: 80px;
 }
 
 main section:nth-child(even) {
     background: white;
+    color: black;
 }
+
 
 main section:nth-child(odd) {
     background: #676167;
+    color: white;
+}
+
+main section .elements {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    text-align: center;  
+}
+
+main section .elements * {
+    margin: 50px 0;
+}
+
+main section .elements a {
+    outline: none;
+    color: white;
+    background: red;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main section .elements a:hover {
+    background-color: rgb(252, 44, 44)
 }
 
 main h2 {
@@ -96,40 +124,8 @@ main h2 {
 }
 
 /* Home Section */
-#home {
-    padding-top: 80px;
-}
-
-#home .home-div {
-    margin: 0 auto;
-    padding: 0;
-    width: 800px;
-    text-align: center;
-}
-
-#home .home-div *{
-    margin: 50px 0;
-    color: white;
-}
-
-#home .home-div h2 {
+#home h2 {
     font-size: 8rem;
-}
-
-#home .home-div p {
-    font-size: 1.9rem;
-}
-
-#home .home-div a {
-    outline: none;
-    background: red;
-    padding: 7px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#home .home-div a:hover {
-    background-color: rgb(247, 17, 17)
 }
 
 /* Footer */
