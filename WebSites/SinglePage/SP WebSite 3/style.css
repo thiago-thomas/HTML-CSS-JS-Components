@@ -128,6 +128,24 @@ main h2 {
     font-size: 8rem;
 }
 
+/* About Section */
+#about h3 {
+    font-size: 2rem;
+}
+
+#about .flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.flexbox p {
+    max-width: 450px;
+    margin: 30px;
+    text-align: left;
+}
+
 /* Footer */
 footer {
     background: green;
