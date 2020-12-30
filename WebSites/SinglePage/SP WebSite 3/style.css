@@ -168,6 +168,52 @@ main h2 {
     font-weight: 800;
 }
 
+/* Pricing Section */
+.pricing-courses {
+    display: flex;
+    margin: 0 50px;
+}
+
+.pricing-courses-col {
+    border: 2px solid grey;
+    margin: 10px 15px;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.pricing-courses-col h3, .pricing-courses-col span {
+    font-weight: 700;
+}
+
+.pricing-courses-col h3 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pricing-courses-col span {
+    font-size: 2.5rem;
+}
+
+.pricing-courses-col hr {
+    margin-top: 30px;
+}
+
+.pricing-courses-col p {
+    text-align: left;
+    margin: 45px;
+}
+
+.pricing-courses-col a {
+    outline: none;
+    color: white;
+    background: red;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
 
 /* Footer */
 footer {
