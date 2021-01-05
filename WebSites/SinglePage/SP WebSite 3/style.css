@@ -96,8 +96,8 @@ main section:nth-child(odd) {
 
 main section .elements {
     margin: 0 auto;
-    padding: 0;
-    width: 800px;
+    padding: 0 50px;
+    max-width: 800px;
     text-align: center;  
 }
 
@@ -137,7 +137,7 @@ main h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: 0 100px;
+    padding: 0 30px;
 }
 
 .flexbox p {
@@ -171,6 +171,7 @@ main h2 {
 /* Students Testimonials Section */
 .students {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     padding-left: 100px; 
     padding-right: 100px;
@@ -181,7 +182,7 @@ main h2 {
     text-align: center;
     margin: 20px 15px;
     padding: 10px;
-    width: 25%;
+    width: 250px;
 }
 
 .students-col p {
@@ -202,13 +203,16 @@ main h2 {
 /* Pricing Section */
 .pricing-courses {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     margin: 0 50px;
 }
 
 .pricing-courses-col {
     border: 2px solid grey;
-    margin: 10px 15px;
+    margin: 20px 15px;
     padding: 40px 50px;
+    max-width: 400px;
     text-align: center;
 }
 
@@ -271,6 +275,12 @@ footer {
 
     header nav a {
         border: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #home h2 {
+        font-size: 5rem;
     }
 }
 
