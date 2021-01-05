@@ -73,7 +73,6 @@ header a:hover {
 }
 
 /* Main Layout */
-
 main {
     margin: 0;
 }
@@ -168,6 +167,37 @@ main h2 {
     font-weight: 800;
 }
 
+/* Students Testimonials Section */
+.students {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+
+.students-col {
+    background: rgb(168, 168, 168);
+    text-align: center;
+    margin: 20px 15px;
+    padding: 10px;
+    width: 25%;
+}
+
+.students-col p {
+    font-size: 1.5rem;
+    margin: 40px 20px;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.students-col img {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
 /* Pricing Section */
 .pricing-courses {
     display: flex;
@@ -212,8 +242,6 @@ main h2 {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
 
 /* Footer */
 footer {
