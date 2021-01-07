@@ -1,4 +1,5 @@
 /* Imports */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
@@ -115,7 +116,7 @@ main section .elements a {
 }
 
 main section .elements a:hover {
-    background-color: rgb(252, 44, 44)
+    background-color: rgb(252, 44, 44);
 }
 
 main h2 {
@@ -251,9 +252,67 @@ main h2 {
 /* Footer */
 footer {
     background: #676167;
+    padding: 20px 40px;
     color: white;
-    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.footer-col h3 {
+    padding: 0 20px;
+    font-size: 3.2rem;
+    font-weight: 800;
     text-align: center;
+}
+
+.footer-col ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-col ul li {
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #c0c0c0;
+}
+
+.footer-col ul li:hover {
+    color: white;
+}
+
+.footer-col.social a {
+    font-size: 3rem;
+    line-height: 1.8;
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.footer-col.social a:hover {
+    color: white;
+}
+
+.rights {
+    text-align: center;
+}
+
+.rights p, .rights a {
+    color: #c0c0c0;
+}
+
+.rights a {
+    text-decoration: none;
+}
+
+.rights a:hover {
+    color: white;
 }
 
 /* Media Queries */
