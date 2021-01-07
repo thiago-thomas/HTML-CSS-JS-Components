@@ -106,7 +106,12 @@ main section .elements * {
     margin: 50px 0;
 }
 
-main section .elements a {
+main h2 {
+    margin: 0;
+    padding: 0;
+}
+
+main .button {
     outline: none;
     color: white;
     background: red;
@@ -115,13 +120,8 @@ main section .elements a {
     text-transform: uppercase;
 }
 
-main section .elements a:hover {
-    background-color: rgb(252, 44, 44);
-}
-
-main h2 {
-    margin: 0;
-    padding: 0;
+main .button:hover {
+    background: rgb(252, 44, 44);
 }
 
 /* Home Section */
@@ -238,15 +238,6 @@ main h2 {
 .pricing-courses-col p {
     text-align: left;
     margin: 45px;
-}
-
-.pricing-courses-col a {
-    outline: none;
-    color: white;
-    background: red;
-    padding: 7px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 /* Footer */
