@@ -7,5 +7,5 @@
 	* Navbars = 4
 
 * Websites: 
-	* SinglePages = 2
+	* SinglePages = 3
 	* MultiPages = 1
