@@ -1,4 +1,4 @@
-# Components and Websites only HTML and CSS (JS Soon)
+# Components and Websites with HTML and CSS (JS Soon)
 
 * Components:
 	* Contact Forms = 3
