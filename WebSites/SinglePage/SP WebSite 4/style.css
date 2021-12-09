@@ -31,7 +31,6 @@ h2 {
     font-size: 3.5rem;
 }
 
-
 h3 {
     font-size: 2.8rem;
 }
@@ -108,32 +107,36 @@ main section .elements {
     text-align: center;  
 }
 
-main section .elements * {
-    margin: 50px 0;
-}
-
 main h2 {
     margin: 0;
     padding: 0;
 }
 
-main .button {
-    outline: none;
-    color: white;
-    background: red;
-    padding: 7px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-main .button:hover {
-    background: rgb(252, 44, 44);
-}
-
 /* Home Section */
-#home h2 {
-    font-size: 8rem;
+#home .elements {
+    position: relative;
 }
+
+#home img {
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+#home h2 {
+    position: absolute;
+    font-size: 5rem;
+    text-shadow: 1px 1px 2px black;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
 
 
 /* Media Queries */
@@ -169,6 +172,11 @@ main .button:hover {
     header nav a.logo {
         border: none;
         margin-top: -10px;
+    }
+
+    #home h2 {
+        font-size: 8rem;
+        transform: translate(-50%, -50%);
     }
 
 }
