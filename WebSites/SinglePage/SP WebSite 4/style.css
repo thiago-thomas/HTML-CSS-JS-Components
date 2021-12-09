@@ -1,0 +1,175 @@
+/* Imports */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* General Setup */
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+p, li, input, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p, li, input, a {
+    font-size: 2rem;
+}
+
+
+/* Header Layout */
+header {
+    background: #74A4C5;
+    color: black;
+    padding: 15px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: block;
+    outline: none;
+    padding: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+
+header nav a.logo {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+}
+
+header a:visited, header a:link, header a:focus {
+    color: white;
+}
+
+header a:hover {
+    color: white;
+}
+
+/* Main Layout */
+main {
+    margin: 0;
+}
+
+main section {
+    padding: 180px 15px;
+    padding-top: 80px;
+}
+
+main section:nth-child(even) {
+    background: white;
+    color: black;
+}
+
+
+main section:nth-child(odd) {
+    background: #74A4C5;
+    color: white;
+}
+
+main section .elements {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 800px;
+    text-align: center;  
+}
+
+main section .elements * {
+    margin: 50px 0;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
+}
+
+main .button {
+    outline: none;
+    color: white;
+    background: red;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main .button:hover {
+    background: rgb(252, 44, 44);
+}
+
+/* Home Section */
+#home h2 {
+    font-size: 8rem;
+}
+
+
+/* Media Queries */
+
+/* Header Queries */
+@media screen and (min-width: 600px) {
+    header, header ul {
+        display: flex;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header nav a {
+        vertical-align: text-bottom;
+    }
+
+    header li {
+        margin-right: 25px;
+    }
+
+    header a:visited, header a:link, header a:focus {
+        color: #dbdbdb;
+        border-color: #dbdbdb;
+    }
+
+    header nav a:hover {
+        color: white;
+        border-color: white;
+    }
+
+    header nav a.logo {
+        border: none;
+        margin-top: -10px;
+    }
+
+}
+
