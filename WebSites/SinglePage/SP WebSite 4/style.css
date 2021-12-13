@@ -4,14 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 /* Typography */
@@ -44,13 +44,11 @@ p, li, input, a {
 header {
     background: #74A4C5;
     color: black;
-    padding: 15px;
+    padding: 20px;
 }
 
 header ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 header a {
@@ -58,7 +56,7 @@ header a {
     font-weight: 300;
     display: block;
     outline: none;
-    padding: 7px;
+    padding: 20px;
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 2px solid white;
@@ -80,13 +78,8 @@ header a:hover {
 }
 
 /* Main Layout */
-main {
-    margin: 0;
-}
-
 main section {
-    padding: 180px 15px;
-    padding-top: 80px;
+    padding: 30px 0;
 }
 
 main section:nth-child(even) {
@@ -100,21 +93,14 @@ main section:nth-child(odd) {
     color: white;
 }
 
-main section .elements {
-    margin: 0 auto;
-    padding: 0 50px;
-    max-width: 800px;
-    text-align: center;  
-}
-
-main h2 {
-    margin: 0;
-    padding: 0;
-}
 
 /* Home Section */
 #home .elements {
     position: relative;
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 800px;
+    text-align: center;  
 }
 
 #home img {
@@ -136,13 +122,13 @@ main h2 {
     z-index: 2;
 }
 
-
+/* Value Layout */
 
 
 /* Media Queries */
 
-/* Header Queries */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
+    /* Header Layout Queries */
     header, header ul {
         display: flex;
     }
@@ -152,6 +138,7 @@ main h2 {
     }
 
     header nav a {
+        padding: 7px;
         vertical-align: text-bottom;
     }
 
@@ -174,10 +161,17 @@ main h2 {
         margin-top: -10px;
     }
 
+    /* Main Layout Queries */
+
+    
+    /* Home Section Queries */
     #home h2 {
         font-size: 8rem;
         transform: translate(-50%, -50%);
     }
 
+    /* Footer Layout Queries */
+
 }
+
 
