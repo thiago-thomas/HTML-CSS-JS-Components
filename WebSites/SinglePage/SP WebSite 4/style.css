@@ -79,7 +79,7 @@ header a:hover {
 
 /* Main Layout */
 main section {
-    padding: 30px 0;
+    padding: 30px 15px;
 }
 
 main section:nth-child(even) {
@@ -87,12 +87,16 @@ main section:nth-child(even) {
     color: black;
 }
 
-
 main section:nth-child(odd) {
     background: #74A4C5;
     color: white;
 }
 
+main section .contents {
+    margin: 0 auto;
+    max-width: 790px;
+    text-align: center;
+}
 
 /* Home Section */
 #home .elements {
@@ -122,8 +126,68 @@ main section:nth-child(odd) {
     z-index: 2;
 }
 
-/* Value Layout */
+/* Value Section */
 
+#value .intro, #value .contents {
+    padding: 0 20px;
+}
+
+#value h2, #value h3 {
+    color: #414B52;
+}
+
+#value p {
+    color: #2c2c2c;
+}
+
+#value .intro {
+    margin-bottom: 20px;
+}
+
+#value .intro h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#value .intro p {
+    font-size: 1.7rem;
+}
+
+#value .columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#value .columns .col {
+    flex: 1 180px;
+    margin: 10px;
+    text-align: center;
+}
+
+#value .columns .col img {
+    margin: 30px 25px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+#value .columns .col h3 {
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#value .columns .col p {
+    font-size: 1.4rem;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #74A4C5;
+}
 
 /* Media Queries */
 
