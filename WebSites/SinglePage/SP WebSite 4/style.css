@@ -184,21 +184,43 @@ main section:nth-child(odd) {
 }
 
 /* Graphics Section*/
-
-.sectors-bars {
-    position: relative;
-    padding: 10px;
+#graphics .intro {
+    margin-bottom: 15px;
 }
 
-.sectors-label, .progress-value {
+#graphics .content .info {
+    margin-right: 30px;
+    text-align: left;
+    padding-top: 10px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+#graphics .content .info p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+#graphics .content .info button {
+    padding: 15px 30px;
+    border: 0;
+    color: #2c2c2c;
+}
+
+#graphics .content .sectors .sectors-bars {
+    position: relative;
+    padding: 10px 0;
+}
+
+#graphics .content .sectors .sectors-label, .progress-value {
     font-size: 1.2rem;
 }
 
-.sectors-label {
+#graphics .content .sectors .sectors-label {
     text-align: start;
 }
 
-.progress {
+#graphics .content .sectors .progress {
 	overflow: hidden;
 	height: 10px;
 	background-color: #ccc;
@@ -207,7 +229,7 @@ main section:nth-child(odd) {
     margin: 3px 0;
 }
 
-.progress-bar {
+#graphics .content .sectors .progress-bar {
 	width: 0;
 	height: 100%;
 	text-align: right;
@@ -216,7 +238,7 @@ main section:nth-child(odd) {
     border-radius: 0 4px 4px 0;
 }
 
-.progress-value {
+#graphics .content .sectors .progress-value {
     position: absolute;
     color: #ffffff;
     top: 10px;
@@ -265,18 +287,22 @@ footer {
         border: none;
         margin-top: -10px;
     }
-
-    /* Main Layout Queries */
-
     
-    /* Home Section Queries */
+
+
     #home h2 {
         font-size: 8rem;
         transform: translate(-50%, -50%);
     }
 
-    /* Footer Layout Queries */
 
+    #graphics .content {
+        display: flex;
+    } 
+
+    #graphics .content div {
+        flex: 1;
+    }
 }
 
 
