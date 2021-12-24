@@ -184,6 +184,11 @@ main section:nth-child(odd) {
 }
 
 /* Graphics Section*/
+#graphics {
+    padding-top: 70px;
+    padding-bottom: 140px;
+}
+
 #graphics .intro {
     margin-bottom: 15px;
 }
@@ -205,6 +210,11 @@ main section:nth-child(odd) {
     padding: 15px 30px;
     border: 0;
     color: #2c2c2c;
+    cursor: pointer;
+}
+
+#graphics .content .info button:hover {
+    background-color: #ffffff;
 }
 
 #graphics .content .sectors .sectors-bars {
@@ -245,6 +255,56 @@ main section:nth-child(odd) {
     margin-left: -25px;
 }
 
+
+/* Products Section */
+#products h2, #products h3 {
+    color: #414B52;
+}
+
+#products p {
+    color: #2c2c2c;
+}
+
+#products .intro {
+    margin-bottom: 50px;
+}
+
+#products .intro h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#products .intro p {
+    font-size: 1.7rem;
+}
+
+#products .content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#products .content .col {
+    flex: 1 170px;
+    text-align: center;
+    margin: 20px;
+}
+
+#products .content .col img {
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+}
+
+#products .content .col h3 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#products .content .col p {
+    font-size: 1.2rem;
+}
 
 /* Footer Section */
 
