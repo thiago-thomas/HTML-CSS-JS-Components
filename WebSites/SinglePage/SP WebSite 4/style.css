@@ -2,6 +2,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* General Setup */
 * {
@@ -310,6 +311,11 @@ main section:nth-child(odd) {
 
 footer {
     background-color: #74A4C5;
+}
+
+.rights {
+    background-color: #000;
+    color: #dbdbdb;
 }
 
 /* Media Queries */
