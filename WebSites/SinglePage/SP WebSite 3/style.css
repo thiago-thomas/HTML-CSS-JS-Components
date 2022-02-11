@@ -51,19 +51,19 @@ header {
 header ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    margin-right: 100px;
+    padding: 0 50px;
 }
 
 header a {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 600;
     display: block;
     outline: none;
-    padding: 7px;
+    padding: 20px;
     text-decoration: none;
     text-transform: capitalize;
-    border-top: 2px solid black;
+    border-bottom: 2px solid #a5b5b7;
+    text-align: center;
 }
 
 header a:visited, header a:link, header a:focus {
@@ -126,7 +126,7 @@ main .button:hover {
 
 /* Home Section */
 #home h2 {
-    font-size: 8rem;
+    font-size: 5rem;
 }
 
 /* About Section */
@@ -314,6 +314,10 @@ footer {
         display: flex;
     }
 
+    header ul {
+        padding: 0;
+    }
+
     header {
         justify-content: space-between;
         align-items: center;
@@ -325,12 +329,20 @@ footer {
 
     header nav a {
         border: 0;
+        font-size: 1.4rem;
+        padding: 7px;
+        text-align: initial;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 800px) {
     #home h2 {
-        font-size: 5rem;
+        font-size: 8rem;
     }
+
+    header ul {
+        margin-right: 100px;
+    }
+
 }
 

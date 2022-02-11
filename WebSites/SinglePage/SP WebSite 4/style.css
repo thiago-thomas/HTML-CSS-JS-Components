@@ -340,6 +340,7 @@ footer i {
 
 footer .contents {
     display: flex;
+    flex-flow: row wrap;
     text-align: left;
 }
 
@@ -348,11 +349,15 @@ footer .col-1, footer .col-2 {
 }
 
 footer .col-2, footer .col-3 {
-    padding-top: 30px;
+    flex: 2 150px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
 }
 
 footer .col-1 {
-    flex: 3;
+    flex: 3 200px;
+    padding-left: 20px;
 }
 
 footer .col-1 p {
@@ -373,19 +378,12 @@ footer .col-1 .social span {
 
 footer .col-1 .social i {
     margin: 0 3px;
-}
-
-footer .col-2 {
-    flex: 2;
+    cursor: pointer;
 }
 
 footer .col-2 p {
     margin-bottom: 10px;
     line-height: 1.5;
-}
-
-footer .col-3 {
-    flex: 2;
 }
 
 footer .col-3 p {
@@ -481,6 +479,10 @@ footer .search-form .search-button {
 
     #graphics .content div {
         flex: 1;
+    }
+
+    footer .col-2, footer .col-3 {
+        padding-top: 30px;
     }
 }
 

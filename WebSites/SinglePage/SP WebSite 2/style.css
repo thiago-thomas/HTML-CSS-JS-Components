@@ -175,14 +175,12 @@ main section.home {
 }
 
 #about h3 {
-    font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
     margin-top: 60px;
 }
 
 #about p {
-    font-size: 2.5rem;
     line-height: 1.5;
     letter-spacing: 2px;
     margin-top: 50px;
@@ -234,7 +232,6 @@ main section.home {
 
 .services-col p {
     font-family: 'Comfortaa', cursive;
-    font-size: 2.5rem;
 }
 
 /* Our Team Layout */
@@ -301,6 +298,10 @@ textarea.form-input {
     line-height: 2;
 }
 
+.form-submit {
+    margin-top: -5px;
+    cursor: pointer;
+}
 
 /* Footer */
 footer {
@@ -367,19 +368,19 @@ footer .col.social a {
 }
 
 footer .col.social a.fa-facebook:hover {
-    color: rgb(70, 70, 223);
+    color: #4646df;
 }
 
 footer .col.social a.fa-instagram:hover {
-    color: rgb(255, 0, 157);
+    color: #ff009d;
 }
 
 footer .col.social a.fa-twitter:hover {
-    color: rgb(0, 225, 255);
+    color: #00e1ff;
 }
 
 footer .col.social a.fa-linkedin:hover {
-    color: rgb(70, 70, 223);
+    color: #4646df;
 }
 
 footer .copyright {
@@ -417,6 +418,19 @@ footer .copyright a {
 
 
 @media screen and (max-width: 795px) {
+    header .logo, header a {
+        text-align: center;
+    }
+
+    header a {
+        border-top: 1px solid white;
+    }
+
+    #about, #services {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
     main section.home {
         background-position: left;
         height: 400px;
@@ -437,6 +451,10 @@ footer .copyright a {
 @media screen and (max-width: 539px) {
     .home-col-text {
         display: none;
+    }
+
+    footer .col {
+        text-align: center;
     }
 }
 
