@@ -114,14 +114,16 @@ main h2 {
 main .button {
     outline: none;
     color: white;
-    background: red;
+    background: rgb(197, 2, 2);
+    border-radius: 3px;
     padding: 7px 25px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .5s ease-in-out;
 }
 
 main .button:hover {
-    background: rgb(252, 44, 44);
+    background: rgb(255, 0, 0);
 }
 
 /* Home Section */
@@ -174,8 +176,6 @@ main .button:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding-left: 100px; 
-    padding-right: 100px;
 }
 
 .students-col {
@@ -250,7 +250,13 @@ footer {
 .footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.footer-col {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .footer-col h3 {
@@ -331,6 +337,10 @@ footer {
         border: 0;
         font-size: 1.4rem;
         padding: 7px;
+        text-align: initial;
+    }
+
+    .footer-col {
         text-align: initial;
     }
 }
